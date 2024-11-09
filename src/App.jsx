@@ -22,14 +22,13 @@ function App() {
   };
   return (
     <>
-      <div className="w-full h-screen bg-slate-900 flex justify-center items-center ">
-        {/* Buttons Side */}
-        <section className="bg-slate-800 w-1/4 h-screen flex justify-center items-center flex-col ">
+      <div className="w-full  flex flex-col justify-center items-center ">
+        <section className="bg-slate-900 w-full flex justify-center items-center max-sm:w-full max-sm:h-auto ">
           <button
             onClick={() => {
               SetView("ViewProfile");
             }}
-            className="bg-slate-700	 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-full m-2 h-12 w-4/5"
+            className="bg-slate-700	max-sm:text-xs hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-full m-2 h-12 "
           >
             View Profile
           </button>
@@ -37,7 +36,7 @@ function App() {
             onClick={() => {
               SetView("ViewFollowers");
             }}
-            className="bg-slate-700	 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-full m-2 h-12 w-4/5"
+            className="bg-slate-700	max-sm:text-xs hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-full m-2 h-12 "
           >
             View Followers
           </button>
@@ -45,14 +44,12 @@ function App() {
             onClick={() => {
               SetView("ViewFollowings");
             }}
-            className="bg-slate-700	 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-full m-2 h-12 w-4/5"
+            className="bg-slate-700	max-sm:text-xs hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-full m-2 h-12 "
           >
             View Followings
           </button>
         </section>
-
-        {/* Preview Side */}
-        <section className="bg-slate-800 w-3/4 h-screen">
+        <section className="bg-slate-800 w-full ">
           <ViewPage />
         </section>
       </div>
